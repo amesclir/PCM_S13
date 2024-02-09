@@ -10,14 +10,15 @@ editor_options:
 FILOGENÉTICA DE COMUNIDADES (Y FILOLORAS)
 
 La filogenética de comunidades y las filofloras son disciplinas que están en auge en los últimos años. 
-Los investigadores están haciendo uso de las filogenias y los modelos filogenéticos comparativos para entender mejor el proceso evolutivo de esamblage y mantinimiento de las comunidades.
+Los investigadores están haciendo uso de las filogenias y los modelos filogenéticos comparativos para entender mejor el proceso evolutivo de esamblage y mantenimiento de las comunidades.
 
-La mayoría de estos análisis tratar de ver como se distribuyen las especies que forman comunidades en una región a lo largo de la filogenia. Normalemente tenemos un conjunto de especies de una region que se encuentran en 2 o más comunidades.
+La mayoría de estos análisis tratan de ver como se distribuyen las especies que forman comunidades en una región a lo largo de la filogenia. Normalemente tenemos un conjunto de especies de una region que se encuentran en 2 o más comunidades.
 
-Si asumimos que las filogenias son surrogados de los caracteres funcionales de las especies (esto solo se puede asumir si tales rasgos funcionales tienen una señoal filogenética fuerte) se pueden obtener dos patrones diferentes en las comunidades, clustering y overdispersion (Webb et al. 2002). 
-El patron de clustering se suele interpretar como el resultado del filtrado ambienteal (es decir, asumiendo que la filogenia es un surrogado de los caracters funcionales claves, solo las especies con ciertos estados de caracter clave pueden pasar ese filtrado ambiental, y por lo tanto solo algunas especies, filogeneticamente cercanas, estarán presentes esa comunidad después de un filtrado ambiental).
-El patron de sobredispersión se suele interpretar como el resultado de la competencia fuerte entre especies cercanas (es decir, asumiendo que la filogenia es un surrogado de los caracters funcionales claves, las especies más cercanas filogeneticamente entre sí están en competencia y se excluyen unas a otras, por lo que solo las especies más filogeneticamente desemparentadas estarán presentes en este comunidad).
-En realidad esto puede ser mucho más complejo. Si imaginamos que los caracteres funcionales clave no tiene señal filogenética, entonces esperamos que tras un proceso de filtrado ambiental encontremos un patrón al azar o sobredispersión, y en un proceso de exclusión por competencia esperarmos encontrar entonces un patrón de clustering en la filogenia.
+Si asumimos que las filogenias son surrogados de los caracteres funcionales de las especies (esto solo se puede asumir si tales rasgos funcionales tienen una señal filogenética fuerte) se pueden obtener dos patrones diferentes en las comunidades, clustering/agrupamiento y overdispersion/sobredispersión (Webb et al. 2002). 
+El patron de clustering se suele interpretar como el resultado del filtrado ambienteal (es decir, asumiendo que la filogenia es un surrogado de los caracteres funcionales claves, solo las especies con ciertos estados de caracter clave pueden pasar ese filtrado ambiental, y por lo tanto solo algunas especies, filogenéticamente cercanas, estarán presentes en esa comunidad después de un filtrado ambiental).
+El patron de sobredispersión se suele interpretar como el resultado de la competencia fuerte entre especies cercanas (es decir, asumiendo que la filogenia es un surrogado de los caracteres funcionales claves, las especies más cercanas filogeneticamente entre sí están en competencia y se excluyen unas a otras, por lo que solo las especies más filogeneticamente desemparentadas estarán presentes en este comunidad).
+En realidad esto puede ser mucho más complejo. Si imaginamos que los caracteres funcionales clave no tienen señal filogenética, entonces esperamos que tras un proceso de filtrado ambiental encontremos un patrón al azar o de sobredispersión, y en un proceso de exclusión por competencia esperamos encontrar entonces un patrón de clustering en la filogenia (Cavender-Bares et al., 2009).
+Pero los patrones filogenéticos que resultan de la competición entre especies pueden depender de como de fuerte es la competición y de como de diferente o similares son los nichos de las especies (Mayfield & Levine 2010).
 
 Para visualizar todo esto vamos a analizar las comunidades de plantas de las islas de San Juan (Marx et al,. 2016). en la que los autores obtuvieron presencia y aunsencia de plantas de 80 comunidades de dichas islas.
 Carguemos nuestro paquete y los archivos de entrada.
@@ -51,18 +52,19 @@ par(fg="black")
 legend(x=0,y=40,c("absent","present"),pch=15,col=colors[[1]],bty="n",pt.cex=1.5)
 ```
 
-Vamos a calcular nuestra primer indice de diversidad filogenética que no es otro que PD. En este caso lo que se hace es sumar todas las ramas de la filogenia de las especis presentes en cada comunidad.
-De nuevo estamos asumiendo que diversidad de una comunidad la podemos medir con su diversidad funcional y que la filogenia es un surrogado de esta diversidad funcional.
+Vamos a calcular nuestro primer indice de diversidad filogenética que no es otro que PD (phylogenetic diversity o diversidad filogenética). En este caso lo que se hace es sumar todas las ramas de la filogenia de las especies presentes en cada comunidad.
+De nuevo estamos asumiendo que la diversidad de una comunidad la podemos medir con su diversidad funcional y que la filogenia es un surrogado de esta diversidad funcional.
 De nuevo estamos asumiendo que las especies más emparentadas en la filogenia son más cercanas ecológicamente que las especies más alejadas en la filogenia. Cuanto mayor sea la PD de una comunidad más tiempo evolutivo está representado en esa comunidad.
-En realidad, se ha visto que en general hay una relación directamente proporcional y muy estrecha entre el número de especies de la comunidad y la diversidad funcional.
-Fijate que hemos hemos transpuesto la matriz con la función t ya que necesita que las comunidades estén en las columnas y las especies en las filas.
 
 ```{r}
 allPd<-pd(t(sj.data),sj.tree)
 head(allPd)
 ```
+En realidad, se ha visto que en general hay una relación directamente proporcional y muy estrecha entre el número de especies de la comunidad y la diversidad funcional.
+Fijate que hemos hemos transpuesto la matriz con la función t ya que necesita que las comunidades estén en las columnas y las especies en las filas.
 
-Podemos observar tres columnas en la salida, una fila con los nombres de las comunidades, otra con la PD y una útlima con a riqueza de especies (SR). La riqueza de especies va de 1 a 169 especies y la PD en millones de años (la unidad de tiempo en las ramas de nuestra filogenia) varían en el orden de miles.
+Podemos observar tres columnas en la salida, una fila con los nombres de las comunidades, otra con la PD y una última con a riqueza de especies (SR). La riqueza de especies va de 1 a 169 especies y la PD en millones de años (la unidad de tiempo en las ramas de nuestra filogenia) varían en el orden de miles.
+
 
 Comprobemos ahora que de verdad la PD y SR tienen una relación directa y muy estrecha.
 
@@ -73,13 +75,14 @@ par(mar=c(5.1,4.1,1.1,2.1))
 plot(allPd[,2:1],bty="n",pch=21,bg="gray",cex=1.5,las=1,cex.axis=0.7,cex.lab=0.9,xlab="Species richness",ylab="Phylogenetic diversity")
 ```
 
-Ahora vamos a comprobar si en una comunidad concreta, en este caso Aleck_Rock hay clustering o overdispersion, es decir, si la PD es más pequeña o maś grande lo que cabrían esperar al azar. Para hacer esto creamos una distribución nula, mediante 999 randomizaciones. Es decir, miramos el número de presencias de Aleck_Rock y generamos al azar comunidades con el mismo número de presencia entre las 366 especies que hay en nuestro arbol, es decir, en nuestro pool regional.
+Ahora vamos a comprobar si en una comunidad concreta, en este caso Aleck_Rock hay clustering o overdispersion, es decir, si la PD es más pequeña o maś grande lo que cabrían esperar al azar. Para hacer esto creamos una distribución nula, mediante 999 randomizaciones. Es decir, miramos el número de presencias de Aleck_Rock y generamos al azar comunidades con el mismo número de presencias entre las 366 especies que hay en nuestro arbol, es decir, en nuestro pool regional.
 
 ```{r}
 ## create a null distribution of species
 ## assemblages for the site ’Aleck_Rock’
 null.Aleck_Rock<-cbind(sj.data[,"Aleck_Rock"],sapply(1:999,function(i,x) sample(x),x=sj.data[,"Aleck_Rock"]))
 rownames(null.Aleck_Rock)<-rownames(sj.data)
+null.Aleck_Rock
 ```
 
 Finalmente calculamos la PD de las 999 comunidades generadas al azar. Y representamos los resultados, es decir, la distribución nula, la esperada al azar, y los datos observados.
@@ -118,9 +121,10 @@ text(x=allPd["Posey_Island",1],y=1.2*max(h$counts),"Observed PD for Posey Island
 
 En este caso podemos apreciar que la diversidad filogenetica es mucho menor de lo que cabría esperar al azar. Hay clustering. No hemos calculado un valor de P, pero el patrón parece ser claro.
 
-En el paquete picante podemos encontrar la función pd.test que nos permite calcular la PD de todas la comunidades a la vez, generar sus distribuciones nulas y nos da valores de P para cada una de ellas y podemos saber automaticamente si estamos en un caso de clustering o sobredispersion.
+En el paquete picante (Kembel et al., 2010) podemos encontrar la función pd.test que nos permite calcular la PD de todas la comunidades a la vez, generar sus distribuciones nulas y nos da valores de P para cada una de ellas y podemos saber automaticamente si estamos en un caso de clustering o sobredispersion.
 
 ```{r}
+library(picante)
 pd.test<-ses.pd(t(sj.data),sj.tree,null.model="richness")
 
 head(pd.test)
@@ -147,7 +151,7 @@ clustResult_mpd<-ses.mpd(t(sj.data),phydistmat,null.model="richness")
 head(clustResult_mpd)
 ```
 
-Tenemos nuestro resultados. Tenemos los valores de P, que en este caso son de una sola cola. Es decir, cualquiera que sea menor de 0.05 o mayor de 0.95, muestra un valor significativo de clustering o overdispersion.
+Tenemos los valores de P, que en este caso son de una sola cola. Es decir, cualquiera que sea menor de 0.05 o mayor de 0.95, muestra un valor significativo de clustering o overdispersion.
 
 ```{r}
 smallmpd<-which(clustResult_mpd$mpd.obs.p < 0.05)
@@ -167,7 +171,7 @@ clustResult_mntd[smallmntd,]
 En este caso son muchas más las comunidades que tienen una diversidad más baja de que cabría esperar al azar.
 
 
-Todos estos calculos son de diversidad alpha pero también podemos calcular diversidad b con picante. Es decir, las diferencias entre las comunidades.
+Todos estos calculos son de diversidad alpha pero también podemos calcular diversidad beta con picante. Es decir, las diferencias entre las comunidades.
 Con la función comdist podemos calular las distancis entre comunidades a partir del calculo del MPD entre comunidades (también se podría hacer con MNTD)
 
 ```{r}
@@ -188,9 +192,9 @@ plot(community_dendro,font=3,cex=0.5,main="",xlab="")
 
 FABRICACIÓN AUTOMÁTICA DE FILOGENIAS
 
-En la disciplina de filogenética de comunidades o filofloras es muy común no generar una filogenia a partir de secuencias de ADN sino generarla a partir de filogenias previamente inferidas y an algunos casos mediante el uso información de tipo taxonómica.
-Para ello vamos a usar el paquete de R llamado randtip. Para instalar este paquete hace falta el paquete remotes.
-Y vamos comprobar los nombre científicos con un paquete llamado U.Taxonstand.
+En la disciplina de filogenética de comunidades o filofloras es muy común no generar una filogenia a partir de secuencias de ADN sino generarla a partir de filogenias previamente inferidas y en algunos casos mediante el uso información de tipo taxonómica.
+Para ello vamos a usar el paquete de R llamado V.PhyloMaker2. Para instalar este paquete hace falta el paquete devtools.
+Y vamos comprobar los nombres científicos de las especies con un paquete llamado U.Taxonstand.
 Cargaremos el archivo comunidades.csv que viene de nuestra archivo comunidades.xslx que hemos hecho entre todos, comprobaremos los nombres y generaremos nuestra filogenia.
 
 ```{r}
@@ -238,6 +242,27 @@ plot(mytree$scenario.3)
 
 #################
 ACTIVIDADES
-1. Repite todos los anáisis que hemos hecho para las comunidades de la Islas de San Juan pero para nuestro dataset
+1. Repite todos los anáisis con el paquete picante que hemos hecho para las comunidades de la Islas de San Juan pero para nuestro dataset
 
 
+```{r}
+## your code here
+```
+
+
+BIBLIOGRAFÍA BÁSICA
+
+Cavender‐Bares, J., Kozak, K. H., Fine, P. V., & Kembel, S. W. (2009). The merging of community ecology and phylogenetic biology. Ecology letters, 12(7), 693-715.
+
+BIBLIOGRAFÍA RECOMENDADA
+
+Kembel, S. W., P. D. Cowan, M. R. Helmus, W. K. Cornwell, H. Morlon, D. D. Ackerly, S. P. Blomberg,
+and C. O. Webb. 2010. Picante: R tools for integrating phylogenies and ecology. Bioinformatics.
+26:1463–64.
+
+Marx, H. E., D. E. Giblin, P. W. Dunwiddie, and D. C. Tank. 2016. Deconstructing Darwin’s naturalization conundrum in the San Juan islands using community phylogenetics and functional traits. Divers. Distrib. 22:318–31.
+
+Mayfield, M. M., & Levine, J. M. (2010). Opposing effects of competitive exclusion on the phylogenetic structure of communities. Ecology letters, 13(9), 1085-1093.
+
+Webb, C. O., D. D. Ackerly, M. A. McPeek, and M. J. Donoghue. 2002. Phylogenies and community
+ecology. Annu. Rev. Ecol. Syst. 33:475–505.
