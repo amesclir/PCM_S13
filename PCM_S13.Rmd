@@ -193,8 +193,8 @@ plot(community_dendro,font=3,cex=0.5,main="",xlab="")
 FABRICACIÓN AUTOMÁTICA DE FILOGENIAS
 
 En la disciplina de filogenética de comunidades o filofloras es muy común no generar una filogenia a partir de secuencias de ADN sino generarla a partir de filogenias previamente inferidas y en algunos casos mediante el uso información de tipo taxonómica.
-Para ello vamos a usar el paquete de R llamado V.PhyloMaker2. Para instalar este paquete hace falta el paquete devtools.
-Y vamos comprobar los nombres científicos de las especies con un paquete llamado U.Taxonstand.
+Para ello vamos a usar el paquete de R llamado V.PhyloMaker2 (Jin & Qian, 2022). Para instalar este paquete hace falta el paquete devtools.
+Y vamos comprobar los nombres científicos de las especies con un paquete llamado U.Taxonstand (Zhang & Qian, 2023).
 Cargaremos el archivo comunidades.csv que viene de nuestra archivo comunidades.xslx que hemos hecho entre todos, comprobaremos los nombres y generaremos nuestra filogenia.
 
 ```{r}
@@ -256,6 +256,8 @@ Cavender‐Bares, J., Kozak, K. H., Fine, P. V., & Kembel, S. W. (2009). The mer
 
 BIBLIOGRAFÍA RECOMENDADA
 
+Jin, Y., & Qian, H. (2022). V. PhyloMaker2: An updated and enlarged R package that can generate very large phylogenies for vascular plants. Plant Diversity, 44(4), 335-339.
+
 Kembel, S. W., P. D. Cowan, M. R. Helmus, W. K. Cornwell, H. Morlon, D. D. Ackerly, S. P. Blomberg,
 and C. O. Webb. 2010. Picante: R tools for integrating phylogenies and ecology. Bioinformatics.
 26:1463–64.
@@ -266,3 +268,5 @@ Mayfield, M. M., & Levine, J. M. (2010). Opposing effects of competitive exclusi
 
 Webb, C. O., D. D. Ackerly, M. A. McPeek, and M. J. Donoghue. 2002. Phylogenies and community
 ecology. Annu. Rev. Ecol. Syst. 33:475–505.
+
+Zhang, J., & Qian, H. (2023). U. Taxonstand: An R package for standardizing scientific names of plants and animals. Plant Diversity, 45(1), 1-5.
