@@ -18,9 +18,9 @@ Si asumimos que las filogenias son surrogados de los caracteres funcionales de l
 El patron de clustering se suele interpretar como el resultado del filtrado ambienteal (es decir, asumiendo que la filogenia es un surrogado de los caracteres funcionales claves, solo las especies con ciertos estados de caracter clave pueden pasar ese filtrado ambiental, y por lo tanto solo algunas especies, filogenéticamente cercanas, estarán presentes en esa comunidad después de un filtrado ambiental).
 El patron de sobredispersión se suele interpretar como el resultado de la competencia fuerte entre especies cercanas (es decir, asumiendo que la filogenia es un surrogado de los caracteres funcionales claves, las especies más cercanas filogeneticamente entre sí están en competencia y se excluyen unas a otras, por lo que solo las especies más filogeneticamente desemparentadas estarán presentes en este comunidad).
 En realidad esto puede ser mucho más complejo. Si imaginamos que los caracteres funcionales clave no tienen señal filogenética, entonces esperamos que tras un proceso de filtrado ambiental encontremos un patrón al azar o de sobredispersión, y en un proceso de exclusión por competencia esperamos encontrar entonces un patrón de clustering en la filogenia (Cavender-Bares et al., 2009).
-Pero los patrones filogenéticos que resultan de la competición entre especies pueden depender de como de fuerte es la competición y de como de diferente o similares son los nichos de las especies (Mayfield & Levine 2010).
+Pero los patrones filogenéticos que resultan de la competición entre especies pueden depender de como de fuerte es la competición y de como de diferentes o similares son los nichos de las especies (Mayfield & Levine 2010).
 
-Para visualizar todo esto vamos a analizar las comunidades de plantas de las islas de San Juan (Marx et al,. 2016). en la que los autores obtuvieron presencia y aunsencia de plantas de 80 comunidades de dichas islas.
+Para visualizar todo esto vamos a analizar las comunidades de plantas de las islas de San Juan (Marx et al,. 2016) en la que los autores obtuvieron presencia y aunsencia de plantas de 80 comunidades de dichas islas.
 Carguemos nuestro paquete y los archivos de entrada.
 
 ```{r}
@@ -60,7 +60,8 @@ De nuevo estamos asumiendo que las especies más emparentadas en la filogenia so
 allPd<-pd(t(sj.data),sj.tree)
 head(allPd)
 ```
-En realidad, se ha visto que en general hay una relación directamente proporcional y muy estrecha entre el número de especies de la comunidad y la diversidad funcional.
+En realidad, se ha visto que en general hay una relación directamente proporcional y muy estrecha entre el número de especies de la comunidad y la diversidad filogenética.
+
 Fijate que hemos hemos transpuesto la matriz con la función t ya que necesita que las comunidades estén en las columnas y las especies en las filas.
 
 Podemos observar tres columnas en la salida, una fila con los nombres de las comunidades, otra con la PD y una última con a riqueza de especies (SR). La riqueza de especies va de 1 a 169 especies y la PD en millones de años (la unidad de tiempo en las ramas de nuestra filogenia) varían en el orden de miles.
@@ -81,6 +82,7 @@ Ahora vamos a comprobar si en una comunidad concreta, en este caso Aleck_Rock ha
 ## create a null distribution of species
 ## assemblages for the site ’Aleck_Rock’
 null.Aleck_Rock<-cbind(sj.data[,"Aleck_Rock"],sapply(1:999,function(i,x) sample(x),x=sj.data[,"Aleck_Rock"]))
+null.Aleck_Rock
 rownames(null.Aleck_Rock)<-rownames(sj.data)
 null.Aleck_Rock
 ```
@@ -121,10 +123,11 @@ text(x=allPd["Posey_Island",1],y=1.2*max(h$counts),"Observed PD for Posey Island
 
 En este caso podemos apreciar que la diversidad filogenetica es mucho menor de lo que cabría esperar al azar. Hay clustering. No hemos calculado un valor de P, pero el patrón parece ser claro.
 
-En el paquete picante (Kembel et al., 2010) podemos encontrar la función pd.test que nos permite calcular la PD de todas la comunidades a la vez, generar sus distribuciones nulas y nos da valores de P para cada una de ellas y podemos saber automaticamente si estamos en un caso de clustering o sobredispersion.
+En el paquete picante (Kembel et al., 2010) podemos encontrar la función pd.test que nos permite calcular la PD de todas la comunidades a la vez, generar sus distribuciones nulas y nos da valores de P para cada una de ellas y podemos saber automáticamente si estamos en un caso de clustering o sobredispersion.
 
 ```{r}
 library(picante)
+#warning, this may take a while
 pd.test<-ses.pd(t(sj.data),sj.tree,null.model="richness")
 
 head(pd.test)
@@ -147,6 +150,7 @@ Esta matriz nos va a permitir calcular MPD y MNTD.
 Para cualcular MPD vamos a usar la función ses.mpd además nos generará modelos nulos y los valores de P.
 
 ```{r}
+#warning, this may take a while
 clustResult_mpd<-ses.mpd(t(sj.data),phydistmat,null.model="richness")
 head(clustResult_mpd)
 ```
@@ -163,6 +167,7 @@ Podemos apreciar que solo 6 comunidades tienen menos MPD de lo que cabría esper
 Podemos hacer los calculos pero esta vez de MNTD con la función ses.mntd
 
 ```{r}
+#warning, this may take a while
 clustResult_mntd<-ses.mntd(t(sj.data),phydistmat,null.model="richness")
 head(clustResult_mntd)
 smallmntd<-which(clustResult_mntd$mntd.obs.p < 0.05)
