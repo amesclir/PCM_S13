@@ -10,7 +10,7 @@ editor_options:
 FILOGENÉTICA DE COMUNIDADES (Y FILOLORAS)
 
 La filogenética de comunidades y las filofloras son disciplinas que están en auge en los últimos años. 
-Los investigadores están haciendo uso de las filogenias y los modelos filogenéticos comparativos para entender mejor el proceso evolutivo de esamblage y mantenimiento de las comunidades.
+Los investigadores están haciendo uso de las filogenias y los modelos filogenéticos comparativos para entender mejor el proceso evolutivos de esamblage y mantenimiento de las comunidades.
 
 La mayoría de estos análisis tratan de ver como se distribuyen las especies que forman comunidades en una región a lo largo de la filogenia. Normalemente tenemos un conjunto de especies de una region que se encuentran en 2 o más comunidades.
 
@@ -33,7 +33,7 @@ print(sj.tree,printlen=2)
 
 ## read in data matrix from file
 sj.data<-read.csv("SJ_ComMatrix.csv",row.names=1)
-
+sj.data
 ```
 
 En este caso tenemos un gran número de especies y de comunidades. Por lo tanto nuestra matriz de ausencia y presencia tiene 360 files y 80 columnas.
@@ -213,6 +213,7 @@ library(U.Taxonstand)
 
 ## read in data matrix from file
 comunidades.data<-read.csv("comunidades.csv",row.names=1)
+
 comunidades.data
 
 # load the database
@@ -234,6 +235,7 @@ corrected.species
 names(corrected.species)
 
 c1<- row.names(comunidades.data)
+#c1<- corrected.species$Accepted_SPNAME
 c2<- corrected.species$Genus_in_database
 c3<- corrected.species$Family
 mydata <- data.frame(species = c1, genus = c2, family = c3)

@@ -31,19 +31,24 @@ par(mar=c(5.1,4.1,1.1,2.1))
 plot(allPd[,2:1],bty="n",pch=21,bg="gray",cex=1.5,las=1,cex.axis=0.7,cex.lab=0.9,xlab="Species richness",ylab="Phylogenetic diversity")
 
 
-pd.test<-ses.pd(t(comunidades.data),tree,null.model="richness")
+pd.test<-ses.pd(t(comunidades.data),tree,null.model="taxa.labels")
 
 head(pd.test)
+pd.test
 
 phydistmat<-cophenetic(tree)
 
-clustResult_mpd<-ses.mpd(t(comunidades.data),phydistmat,null.model="richness")
+clustResult_mpd<-ses.mpd(t(comunidades.data),phydistmat,null.model="taxa.labels")
 head(clustResult_mpd)
 
 smallmpd<-which(clustResult_mpd$mpd.obs.p < 0.05)
 clustResult_mpd[smallmpd,]
 
-clustResult_mntd<-ses.mntd(t(comunidades.data),phydistmat,null.model="richness")
+bigmpd<-which(clustResult_mpd$mpd.obs.p > 0.95)
+clustResult_mpd[bigmpd,]
+
+
+clustResult_mntd<-ses.mntd(t(comunidades.data),phydistmat,null.model="taxa.labels")
 head(clustResult_mntd)
 smallmntd<-which(clustResult_mntd$mntd.obs.p < 0.05)
 clustResult_mntd[smallmntd,]
