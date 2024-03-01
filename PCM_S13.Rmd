@@ -233,9 +233,10 @@ corrected.species <- nameMatch(row.names(comunidades.data),spSource=database, au
 corrected.species
 #make corrections to your database if necessary
 names(corrected.species)
+write.csv(corrected.species, file = "corrected.species.csv")
 
-c1<- row.names(comunidades.data)
-#c1<- corrected.species$Accepted_SPNAME
+#c1<- row.names(comunidades.data)
+c1<- corrected.species$Accepted_SPNAME
 c2<- corrected.species$Genus_in_database
 c3<- corrected.species$Family
 mydata <- data.frame(species = c1, genus = c2, family = c3)
