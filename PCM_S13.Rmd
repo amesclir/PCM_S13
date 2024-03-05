@@ -244,7 +244,7 @@ mydata <- data.frame(species = c1, genus = c2, family = c3)
 mytree <- phylo.maker(sp.list = mydata, tree = GBOTB.extended.WP, nodes = nodes.info.1.WP, scenarios = "S3")
 #There is available S1 and S2 and nodes.info.2.WP.csv
 
-plot(mytree$scenario.3)
+plot(mytree$scenario.3, cex = 0.5)
 ```
 
 
