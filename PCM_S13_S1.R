@@ -52,6 +52,8 @@ clustResult_mntd<-ses.mntd(t(comunidades.data),phydistmat,null.model="taxa.label
 head(clustResult_mntd)
 smallmntd<-which(clustResult_mntd$mntd.obs.p < 0.05)
 clustResult_mntd[smallmntd,]
+bigmntd<-which(clustResult_mntd$mntd.obs.p > 0.95)
+clustResult_mpd[bigmpd,]
 
 
 D.comdist<-comdist(t(comunidades.data),phydistmat)
