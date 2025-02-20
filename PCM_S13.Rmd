@@ -133,6 +133,24 @@ pd.test<-ses.pd(t(sj.data),sj.tree,null.model="richness")
 head(pd.test)
 ```
 
+ntaxa:  Número de taxones (especies, unidades taxonómicas operacionales, etc.) presentes en cada comunidad o muestra. En tu tabla, vemos que Aleck_Rock y Battleship_Island tienen 76 taxones, mientras que Broken_Point_Island tiene 46, por ejemplo.
+
+pd.obs: Valor observado de la Diversidad Filogenética (PD) para cada comunidad.  Este es el valor de PD calculado directamente a partir del árbol filogenético y la presencia/ausencia (o abundancia) de taxones en cada muestra. Representa la suma de las longitudes de las ramas del árbol filogenético que abarcan los taxones presentes en la comunidad.
+
+pd.rand.mean: Media de los valores de PD obtenidos para cada comunidad a partir de un gran número de permutaciones aleatorias (en este caso, 999 como se ve en la columna runs). Estas permutaciones se realizan para generar una distribución nula de PD, es decir, el valor esperado de PD si la distribución de taxones en las comunidades fuera aleatoria con respecto a la filogenia.
+
+pd.rand.sd: Desviación estándar de los valores de PD obtenidos en las permutaciones aleatorias.  Mide la dispersión de la distribución nula de PD.
+
+pd.obs.rank: Rango del valor de PD observado (pd.obs) en relación con los valores de PD obtenidos en las permutaciones aleatorias.  Un rango bajo (como el 13 para Broken_Point_Island) sugiere que el valor de PD observado es significativamente menor de lo esperado por azar.
+
+pd.obs.z: Puntuación z del valor de PD observado.  Indica cuántas desviaciones estándar se aleja el valor observado de la media de los valores aleatorios. Se calcula como: (pd.obs - pd.rand.mean) / pd.rand.sd.  Valores negativos altos (como el -2.2086518 para Broken_Point_Island) sugieren que el PD observado es significativamente menor que el esperado por azar.
+
+pd.obs.p: Valor p del valor de PD observado.  Representa la probabilidad de obtener un valor de PD igual o menor (si pd.obs.z es negativo) o igual o mayor (si pd.obs.z es positivo) que el valor observado, asumiendo que la distribución de taxones es aleatoria.  Un valor p bajo (como el 0.013 para Broken_Point_Island) indica que el resultado es estadísticamente significativo, es decir, es poco probable que se haya obtenido por azar.
+
+runs: Número de permutaciones aleatorias realizadas para calcular la distribución nula de PD. En tu caso, se realizaron 999 permutaciones para cada comunidad.
+
+
+
 Podemos ver los resultados. Fíjate que aquí hemos elegido el método de remuestreo "richness" que es precisamente el que hemos utilizado antes, pero hay otros métodos.
 
 En la actualidad hay otros índices de diversidad filogenética muy populares. 
