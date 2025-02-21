@@ -7,7 +7,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-FILOGENÉTICA DE COMUNIDADES (Y FILOLORAS)
+FILOGENÉTICA DE COMUNIDADES (Y FILOFLORAS)
 
 La filogenética de comunidades y las filofloras son disciplinas que están en auge en los últimos años. 
 Los investigadores están haciendo uso de las filogenias y los modelos filogenéticos comparativos para entender mejor el proceso evolutivos de esamblage y mantenimiento de las comunidades.
@@ -20,7 +20,7 @@ El patron de sobredispersión se suele interpretar como el resultado de la compe
 En realidad esto puede ser mucho más complejo. Si imaginamos que los caracteres funcionales clave no tienen señal filogenética, entonces esperamos que tras un proceso de filtrado ambiental encontremos un patrón al azar o de sobredispersión, y en un proceso de exclusión por competencia esperamos encontrar entonces un patrón de clustering en la filogenia (Cavender-Bares et al., 2009).
 Pero los patrones filogenéticos que resultan de la competición entre especies pueden depender de como de fuerte es la competición y de como de diferentes o similares son los nichos de las especies (Mayfield & Levine 2010).
 
-Para visualizar todo esto vamos a analizar las comunidades de plantas de las islas de San Juan (Marx et al,. 2016) en la que los autores obtuvieron presencia y aunsencia de plantas de 80 comunidades de dichas islas.
+Para visualizar todo esto vamos a analizar las comunidades de plantas de las islas de San Juan (Marx et al,. 2016) en la que los autores obtuvieron presencia y ausencia de plantas de 80 comunidades de dichas islas.
 Carguemos nuestro paquete y los archivos de entrada.
 
 ```{r}
