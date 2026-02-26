@@ -7,6 +7,8 @@ row.names(comunidades.data) <- gsub(" ", "_", row.names(comunidades.data))
 tree <- mytree$scenario.3
 class(tree)
 tree$node.label<-NULL
+write.tree(tree, file="mytree.tree")
+tree <- read.tree(file="mytree.tree")
 library(geiger)
 
 ## set colors

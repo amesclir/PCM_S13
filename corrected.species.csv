@@ -1,85 +1,61 @@
 "","SORTER","Submitted_Name","Submitted_Author","Submitted_Genus","Submitted_Rank","Name_in_database","Author_in_database","Genus_in_database","Rank_in_database","ID_in_database","Name_set","Fuzzy","Score","name.dist","author.dist","New_name","New_author","New_ID","Family","Name_spLev","Accepted_SPNAME","NOTE"
-"1",1,"Allium cepa","","Allium",2,"Allium cepa","L.","Allium",2,77203,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium cepa",NA
-"3",2,"Allium sativum","","Allium",2,"Allium sativum","L.","Allium",2,77912,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium sativum",NA
-"5",3,"Aloe vera","","Aloe",2,"Aloe vera","(L.) Burm.fil.","Aloe",2,76643,1,FALSE,0.8,0,NA,NA,NA,NA,"Xanthorrhoeaceae",NA,"Aloe vera",NA
-"6",4,"Anacardium occidentale","","Anacardium",2,"Anacardium occidentale","L.","Anacardium",2,224466,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Anacardium occidentale",NA
-"7",5,"Ananas comosus","","Ananas",2,"Ananas comosus","(L.) Merr.","Ananas",2,93781,1,FALSE,0.8,0,NA,NA,NA,NA,"Bromeliaceae",NA,"Ananas comosus",NA
-"8",6,"Apium graveolens","","Apium",2,"Apium graveolens","L.","Apium",2,403552,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Apium graveolens",NA
-"9",7,"Arachis hypogaea","","Arachis",2,"Arachis hypogaea","L.","Arachis",2,173780,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Arachis hypogaea",NA
-"10",8,"Avena sativa","","Avena",2,"Avena sativa","L.","Avena",2,107814,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Avena sativa",NA
-"11",9,"Beta vulgaris","","Beta",2,"Beta vulgaris"," L.","Beta",2,258488,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaranthaceae",NA,"Beta vulgaris",NA
-"12",10,"Brassica napus","","Brassica",2,"Brassica napus","L.","Brassica",2,244956,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Brassica napus",NA
-"13",11,"Brassica oleracea","","Brassica",2,"Brassica oleracea","L.","Brassica",2,244963,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Brassica oleracea",NA
-"15",12,"Camellia sinensis","","Camellia",2,"Camellia sinensis"," (L.) Kuntze","Camellia",2,276596,1,FALSE,0.8,0,NA,NA,NA,NA,"Theaceae",NA,"Camellia sinensis",NA
-"16",13,"Capsicum annuum","","Capsicum",2,"Capsicum annuum","L.","Capsicum",2,346870,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Capsicum annuum",NA
-"17",14,"Carica papaya","","Carica",2,"Carica papaya","L.","Carica",2,240415,1,FALSE,0.8,0,NA,NA,NA,NA,"Caricaceae",NA,"Carica papaya",NA
-"18",15,"Carya illinoiensis","","Carya",2,"Carya illinoiensis","(Wangenh.) K.Koch","Carya",2,206400,1,FALSE,0.8,0,NA,NA,NA,NA,"Juglandaceae",NA,"Carya illinoiensis",NA
-"19",16,"Chamaemelum nobile","","Chamaemelum",2,"Chamaemelum nobile","(L.) All.","Chamaemelum",2,384180,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Chamaemelum nobile",NA
-"20",17,"Chenopodium quinoa","","Chenopodium",2,"Chenopodium quinoa","Willd.","Chenopodium",2,259121,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaranthaceae",NA,"Chenopodium quinoa",NA
-"21",18,"Cicer arietinum","","Cicer",2,"Cicer arietinum","L.","Cicer",2,186049,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Cicer arietinum",NA
-"23",19,"Citrus reticulata","","Citrus",2,"Citrus reticulata","Blanco","Citrus",2,228739,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Citrus reticulata",NA
-"22",20,"Citrus X limon","","Citrus",2,"Citrus X limon","(L.) Burm.fil.","Citrus",2,228751,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Citrus X limon",NA
-"24",21,"Cocos nucifera","","Cocos",2,"Cocos nucifera","L.","Cocos",2,85265,1,FALSE,0.8,0,NA,NA,NA,NA,"Arecaceae",NA,"Cocos nucifera",NA
-"25",22,"Coffea arabica","","Coffea",2,"Coffea arabica","L.","Coffea",2,297308,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Coffea arabica",NA
-"26",23,"Coriandrum sativum","","Coriandrum",2,"Coriandrum sativum","L.","Coriandrum",2,403777,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Coriandrum sativum",NA
-"27",24,"Cucumis sativus","","Cucumis",2,"Cucumis sativus","L.","Cucumis",2,205028,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Cucumis sativus",NA
-"28",25,"Cucurbita maxima","","Cucurbita",2,"Cucurbita maxima"," Duchesne","Cucurbita",2,204617,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Cucurbita maxima",NA
-"29",26,"Cucurbita pepo","","Cucurbita",2,"Cucurbita pepo","L.","Cucurbita",2,204631,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Cucurbita pepo",NA
-"30",27,"Cuminum cyminum","","Cuminum",2,"Cuminum cyminum","L.","Cuminum",2,403350,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Cuminum cyminum",NA
-"31",28,"Cynara scolymus","","Cynara",2,"Cynara scolymus","L.","Cynara",2,359583,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cynara scolymus",NA
-"32",29,"Cyperus esculentus","","Cyperus",2,"Cyperus esculentus","L.","Cyperus",2,100465,1,FALSE,0.8,0,NA,NA,NA,NA,"Cyperaceae",NA,"Cyperus esculentus",NA
-"33",30,"Daucus carota","","Daucus",2,"Daucus carota"," L.","Daucus",2,403435,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Daucus carota",NA
-"34",31,"Elaeis guineensis","","Elaeis",2,"Elaeis guineensis","Jacq.","Elaeis",2,85030,1,FALSE,0.8,0,NA,NA,NA,NA,"Arecaceae",NA,"Elaeis guineensis",NA
-"35",32,"Fragaria vesca","","Fragaria",2,"Fragaria vesca"," L.","Fragaria",2,193348,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Fragaria vesca",NA
-"36",33,"Glycine max","","Glycine",2,"Glycine max","(L.) Merr.","Glycine",2,180141,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Glycine max",NA
-"37",34,"Helianthus annuus","","Helianthus",2,"Helianthus annuus","L.","Helianthus",2,397797,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helianthus annuus",NA
-"38",35,"Hordeum vulgare","","Hordeum",2,"Hordeum vulgare"," L.","Hordeum",2,112608,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Hordeum vulgare",NA
-"40",36,"Humulus lupulus","","Humulus",2,"Humulus lupulus","L.","Humulus",2,197646,1,FALSE,0.8,0,NA,NA,NA,NA,"Cannabaceae",NA,"Humulus lupulus",NA
-"41",37,"Ilex guayusa","","Ilex",2,"Ilex guayusa","Loes.","Ilex",2,351646,1,FALSE,0.8,0,NA,NA,NA,NA,"Aquifoliaceae",NA,"Ilex guayusa",NA
-"42",38,"Ipomoea batatas","","Ipomoea",2,"Ipomoea batatas","(L.) Lam.","Ipomoea",2,343294,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Ipomoea batatas",NA
-"43",39,"Juglans regia","","Juglans",2,"Juglans regia","L.","Juglans",2,206441,1,FALSE,0.8,0,NA,NA,NA,NA,"Juglandaceae",NA,"Juglans regia",NA
-"44",40,"Lactuca sativa","","Lactuca",2,"Lactuca sativa","L.","Lactuca",2,407769,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Lactuca sativa",NA
-"45",41,"Lavandula angustifolia","","Lavandula",2,"Lavandula angustifolia"," Mill.","Lavandula",2,323942,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula angustifolia",NA
-"47",42,"Linum usitatissimum","","Linum",2,"Linum usitatissimum","L.","Linum",2,150686,1,FALSE,0.8,0,NA,NA,NA,NA,"Linaceae",NA,"Linum usitatissimum",NA
-"48",43,"Malus sylvestris","","Malus",2,"Malus sylvestris"," Mill.","Malus",2,195599,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Malus sylvestris",NA
-"50",44,"Mangifera indica","","Mangifera",2,"Mangifera indica","L.","Mangifera",2,224494,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Mangifera indica",NA
-"53",45,"Mentha spicata","","Mentha",2,"Mentha spicata"," L.","Mentha",2,325359,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Mentha spicata",NA
-"54",46,"Musa X paradisiaca","","Musa",2,"Musa X paradisiaca","L.","Musa",2,88055,1,FALSE,0.8,0,NA,NA,NA,NA,"Musaceae",NA,"Musa X paradisiaca",NA
-"55",47,"Myristica fragrans","","Myristica",2,"Myristica fragrans","Houtt.","Myristica",2,25254,1,FALSE,0.8,0,NA,NA,NA,NA,"Myristicaceae",NA,"Myristica fragrans",NA
-"56",48,"Ocimum basilicum","","Ocimum",2,"Ocimum basilicum","L.","Ocimum",2,323027,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Ocimum basilicum",NA
-"57",49,"Olea europaea","","Olea",2,"Olea europaea"," L.","Olea",2,309978,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Olea europaea",NA
-"58",50,"Origanum vulgare","","Origanum",2,"Origanum vulgare"," L.","Origanum",2,326069,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Origanum vulgare",NA
-"59",51,"Oryza sativa","","Oryza",2,"Oryza sativa","L.","Oryza",2,104977,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Oryza sativa",NA
-"60",52,"Papaver rhoeas","","Papaver",2,"Papaver rhoeas"," L.","Papaver",2,126037,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Papaver rhoeas",NA
-"61",53,"Passiflora edulis","","Passiflora",2,"Passiflora edulis","Sims","Passiflora",2,153038,1,FALSE,0.8,0,NA,NA,NA,NA,"Passifloraceae",NA,"Passiflora edulis",NA
-"62",54,"Persea americana","","Persea",2,"Persea americana","Mill.","Persea",2,22365,1,FALSE,0.8,0,NA,NA,NA,NA,"Lauraceae",NA,"Persea americana",NA
-"63",55,"Petroselinum crispum","","Petroselinum",2,"Petroselinum crispum"," (Mill.) Fuss","Petroselinum",2,403585,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Petroselinum crispum",NA
-"67",56,"Phaseolus vulgaris","","Phaseolus",2,"Phaseolus vulgaris","L.","Phaseolus",2,179750,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Phaseolus vulgaris",NA
-"68",57,"Phoenix dactylifera","","Phoenix",2,"Phoenix dactylifera","L.","Phoenix",2,84792,1,FALSE,0.8,0,NA,NA,NA,NA,"Arecaceae",NA,"Phoenix dactylifera",NA
-"69",58,"Pinus pinea","","Pinus",2,"Pinus pinea","L.","Pinus",2,408077,1,FALSE,0.8,0,NA,NA,NA,NA,"Pinaceae",NA,"Pinus pinea",NA
-"72",59,"Piper nigrum","","Piper",2,"Piper nigrum","L.","Piper",2,17585,1,FALSE,0.8,0,NA,NA,NA,NA,"Piperaceae",NA,"Piper nigrum",NA
-"75",60,"Pistacia vera","","Pistacia",2,"Pistacia vera","L.","Pistacia",2,225225,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Pistacia vera",NA
-"77",61,"Plantago ovata","","Plantago",2,"Plantago ovata","Forssk.","Plantago",2,316559,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Plantago ovata",NA
-"78",62,"Prunus domestica","","Prunus",2,"Prunus domestica"," L.","Prunus",2,193644,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Prunus domestica",NA
-"79",63,"Prunus dulcis","","Prunus",2,"Prunus dulcis","(Mill.) D.A.Webb","Prunus",2,193648,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Prunus dulcis",NA
-"81",64,"Pyrus communis","","Pyrus",2,"Pyrus communis"," L.","Pyrus",2,194794,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Pyrus communis",NA
-"82",65,"Rosa moschata","","Rosa",2,"Rosa moschata","Herrm.","Rosa",2,191510,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa moschata",NA
-"84",66,"Rubus idaeus","","Rubus",2,"Rubus idaeus"," L.","Rubus",2,189839,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus idaeus",NA
-"87",67,"Saccharum officinarum","","Saccharum",2,"Saccharum officinarum","L.","Saccharum",2,116216,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Saccharum officinarum",NA
-"88",68,"Salvia rosmarinus","","Salvia",2,"Salvia rosmarinus","Schleid.","Salvia",2,322315,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia rosmarinus",NA
-"89",69,"Secale cereale","","Secale",2,"Secale cereale"," L.","Secale",2,112630,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Secale cereale",NA
-"90",70,"Sesamum indicum","","Sesamum",2,"Sesamum indicum"," L.","Sesamum",2,334447,1,FALSE,0.8,0,NA,NA,NA,NA,"Pedaliaceae",NA,"Sesamum indicum",NA
-"91",71,"Sinapis alba","","Sinapis",2,"Sinapis alba","L.","Sinapis",2,244734,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Sinapis alba",NA
-"92",72,"Solanum lycopersicum","","Solanum",2,"Solanum lycopersicum","L.","Solanum",2,345973,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum lycopersicum",NA
-"94",73,"Solanum melongena","","Solanum",2,"Solanum melongena","L.","Solanum",2,346026,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum melongena",NA
-"96",74,"Solanum tuberosum","","Solanum",2,"Solanum tuberosum"," L.","Solanum",2,346557,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum tuberosum",NA
-"98",75,"Spinacia oleracea","","Spinacia",2,"Spinacia oleracea","L.","Spinacia",2,258566,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaranthaceae",NA,"Spinacia oleracea",NA
-"99",76,"Theobroma cacao","","Theobroma",2,"Theobroma cacao"," L.","Theobroma",2,235061,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Theobroma cacao",NA
-"100",77,"Thymus vulgaris","","Thymus",2,"Thymus vulgaris"," L.","Thymus",2,325900,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Thymus vulgaris",NA
-"101",78,"Triticum aestivum","","Triticum",2,"Triticum aestivum"," L.","Triticum",2,112666,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Triticum aestivum",NA
-"102",79,"Triticum spelta","","Triticum",2,"Triticum spelta","L.","Triticum",2,112690,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Triticum spelta",NA
-"103",80,"Vanilla planifolia","","Vanilla",2,"Vanilla planifolia","Jacks.","Vanilla",2,38666,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Vanilla planifolia",NA
-"104",81,"Vicia lens","","Vicia",2,"Vicia lens","(L.) Coss. &  Germ. (L.) Coss. &  Germ.","Vicia",2,186640,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia lens",NA
-"106",82,"Vitis vinifera","","Vitis",2,"Vitis vinifera","L.","Vitis",2,134710,1,FALSE,0.8,0,NA,NA,NA,NA,"Vitaceae",NA,"Vitis vinifera",NA
-"107",83,"Zea mays","","Zea",2,"Zea mays"," L.","Zea",2,115675,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Zea mays",NA
-"108",84,"Zingiber officinale","","Zingiber",2,"Zingiber officinale","Roscoe","Zingiber",2,89545,1,FALSE,0.8,0,NA,NA,NA,NA,"Zingiberaceae",NA,"Zingiber officinale",NA
+"1",1,"Actinidia deliciosa","","Actinidia",2,"Actinidia deliciosa","(Chev.) C. F. Liang & A. R. Ferguson","Actinidia",2,955563,1,FALSE,0.8,0,NA,"Actinidia chinensis var. hispida","C.F.Liang",277503,"Actinidiaceae",NA,"Actinidia chinensis",NA
+"2",2,"Allium cepa","","Allium",2,"Allium cepa","L.","Allium",2,77203,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium cepa",NA
+"4",3,"Allium sativum","","Allium",2,"Allium sativum","L.","Allium",2,77912,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium sativum",NA
+"5",4,"Anacardium occidentale","","Anacardium",2,"Anacardium occidentale","L.","Anacardium",2,224466,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Anacardium occidentale",NA
+"6",5,"Apium graveolens","","Apium",2,"Apium graveolens","L.","Apium",2,403552,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Apium graveolens",NA
+"7",6,"Asparagus officinalis","","Asparagus",2,"Asparagus officinalis"," L.","Asparagus",2,80072,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Asparagus officinalis",NA
+"8",7,"Avena sativa","","Avena",2,"Avena sativa","L.","Avena",2,107814,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Avena sativa",NA
+"9",8,"Beta vulgaris","","Beta",2,"Beta vulgaris"," L.","Beta",2,258488,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaranthaceae",NA,"Beta vulgaris",NA
+"10",9,"Brassica napus","","Brassica",2,"Brassica napus","L.","Brassica",2,244956,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Brassica napus",NA
+"12",10,"Brassica oleracea","","Brassica",2,"Brassica oleracea","L.","Brassica",2,244963,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Brassica oleracea",NA
+"13",11,"Camellia sinensis","","Camellia",2,"Camellia sinensis"," (L.) Kuntze","Camellia",2,276596,1,FALSE,0.8,0,NA,NA,NA,NA,"Theaceae",NA,"Camellia sinensis",NA
+"14",12,"Capsicum annuum","","Capsicum",2,"Capsicum annuum","L.","Capsicum",2,346870,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Capsicum annuum",NA
+"15",13,"Carya illinoiensis","","Carya",2,"Carya illinoiensis","(Wangenh.) K.Koch","Carya",2,206400,1,FALSE,0.8,0,NA,NA,NA,NA,"Juglandaceae",NA,"Carya illinoiensis",NA
+"16",14,"Chenopodium quinoa","","Chenopodium",2,"Chenopodium quinoa","Willd.","Chenopodium",2,259121,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaranthaceae",NA,"Chenopodium quinoa",NA
+"17",15,"Cicer arietinum","","Cicer",2,"Cicer arietinum","L.","Cicer",2,186049,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Cicer arietinum",NA
+"19",16,"Citrus reticulata","","Citrus",2,"Citrus reticulata","Blanco","Citrus",2,228739,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Citrus reticulata",NA
+"18",17,"Citrus X limon","","Citrus",2,"Citrus X limon","(L.) Burm.fil.","Citrus",2,228751,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Citrus X limon",NA
+"20",18,"Cocos nucifera","","Cocos",2,"Cocos nucifera","L.","Cocos",2,85265,1,FALSE,0.8,0,NA,NA,NA,NA,"Arecaceae",NA,"Cocos nucifera",NA
+"21",19,"Coffea arabica","","Coffea",2,"Coffea arabica","L.","Coffea",2,297308,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Coffea arabica",NA
+"22",20,"Coriandrum sativum","","Coriandrum",2,"Coriandrum sativum","L.","Coriandrum",2,403777,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Coriandrum sativum",NA
+"23",21,"Cucumis melo","","Cucumis",2,"Cucumis melo"," L.","Cucumis",2,205002,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Cucumis melo",NA
+"25",22,"Cucumis sativus","","Cucumis",2,"Cucumis sativus","L.","Cucumis",2,205028,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Cucumis sativus",NA
+"26",23,"Cucurbita pepo","","Cucurbita",2,"Cucurbita pepo","L.","Cucurbita",2,204631,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Cucurbita pepo",NA
+"27",24,"Cynara scolymus","","Cynara",2,"Cynara scolymus","L.","Cynara",2,359583,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cynara scolymus",NA
+"28",25,"Daucus carota","","Daucus",2,"Daucus carota"," L.","Daucus",2,403435,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Daucus carota",NA
+"29",26,"Elaeis guineensis","","Elaeis",2,"Elaeis guineensis","Jacq.","Elaeis",2,85030,1,FALSE,0.8,0,NA,NA,NA,NA,"Arecaceae",NA,"Elaeis guineensis",NA
+"30",27,"Fragaria vesca","","Fragaria",2,"Fragaria vesca"," L.","Fragaria",2,193348,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Fragaria vesca",NA
+"31",28,"Glycine max","","Glycine",2,"Glycine max","(L.) Merr.","Glycine",2,180141,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Glycine max",NA
+"32",29,"Helianthus annuus","","Helianthus",2,"Helianthus annuus","L.","Helianthus",2,397797,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helianthus annuus",NA
+"33",30,"Hordeum vulgare","","Hordeum",2,"Hordeum vulgare"," L.","Hordeum",2,112608,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Hordeum vulgare",NA
+"34",31,"Humulus lupulus","","Humulus",2,"Humulus lupulus","L.","Humulus",2,197646,1,FALSE,0.8,0,NA,NA,NA,NA,"Cannabaceae",NA,"Humulus lupulus",NA
+"36",32,"Ipomoea batatas","","Ipomoea",2,"Ipomoea batatas","(L.) Lam.","Ipomoea",2,343294,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Ipomoea batatas",NA
+"37",33,"Juglans regia","","Juglans",2,"Juglans regia","L.","Juglans",2,206441,1,FALSE,0.8,0,NA,NA,NA,NA,"Juglandaceae",NA,"Juglans regia",NA
+"38",34,"Lactuca sativa","","Lactuca",2,"Lactuca sativa","L.","Lactuca",2,407769,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Lactuca sativa",NA
+"40",35,"Malus sylvestris","","Malus",2,"Malus sylvestris"," Mill.","Malus",2,195599,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Malus sylvestris",NA
+"41",36,"Mentha spicata","","Mentha",2,"Mentha spicata"," L.","Mentha",2,325359,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Mentha spicata",NA
+"42",37,"Musa X paradisiaca","","Musa",2,"Musa X paradisiaca","L.","Musa",2,88055,1,FALSE,0.8,0,NA,NA,NA,NA,"Musaceae",NA,"Musa X paradisiaca",NA
+"43",38,"Ocimum basilicum","","Ocimum",2,"Ocimum basilicum","L.","Ocimum",2,323027,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Ocimum basilicum",NA
+"44",39,"Olea europaea","","Olea",2,"Olea europaea"," L.","Olea",2,309978,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Olea europaea",NA
+"45",40,"Origanum vulgare","","Origanum",2,"Origanum vulgare"," L.","Origanum",2,326069,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Origanum vulgare",NA
+"46",41,"Oryza sativa","","Oryza",2,"Oryza sativa","L.","Oryza",2,104977,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Oryza sativa",NA
+"47",42,"Passiflora edulis","","Passiflora",2,"Passiflora edulis","Sims","Passiflora",2,153038,1,FALSE,0.8,0,NA,NA,NA,NA,"Passifloraceae",NA,"Passiflora edulis",NA
+"48",43,"Persea americana","","Persea",2,"Persea americana","Mill.","Persea",2,22365,1,FALSE,0.8,0,NA,NA,NA,NA,"Lauraceae",NA,"Persea americana",NA
+"51",44,"Pinus pinea","","Pinus",2,"Pinus pinea","L.","Pinus",2,408077,1,FALSE,0.8,0,NA,NA,NA,NA,"Pinaceae",NA,"Pinus pinea",NA
+"52",45,"Piper nigrum","","Piper",2,"Piper nigrum","L.","Piper",2,17585,1,FALSE,0.8,0,NA,NA,NA,NA,"Piperaceae",NA,"Piper nigrum",NA
+"55",46,"Plantago ovata","","Plantago",2,"Plantago ovata","Forssk.","Plantago",2,316559,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Plantago ovata",NA
+"57",47,"Pyrus communis","","Pyrus",2,"Pyrus communis"," L.","Pyrus",2,194794,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Pyrus communis",NA
+"60",48,"Rosa moschata","","Rosa",2,"Rosa moschata","Herrm.","Rosa",2,191510,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa moschata",NA
+"61",49,"Salvia rosmarinus","","Salvia",2,"Salvia rosmarinus","Schleid.","Salvia",2,322315,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia rosmarinus",NA
+"62",50,"Solanum lycopersicum","","Solanum",2,"Solanum lycopersicum","L.","Solanum",2,345973,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum lycopersicum",NA
+"63",51,"Solanum melongena","","Solanum",2,"Solanum melongena","L.","Solanum",2,346026,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum melongena",NA
+"65",52,"Solanum tuberosum","","Solanum",2,"Solanum tuberosum"," L.","Solanum",2,346557,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum tuberosum",NA
+"68",53,"Spinacia oleracea","","Spinacia",2,"Spinacia oleracea","L.","Spinacia",2,258566,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaranthaceae",NA,"Spinacia oleracea",NA
+"69",54,"Theobroma cacao","","Theobroma",2,"Theobroma cacao"," L.","Theobroma",2,235061,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Theobroma cacao",NA
+"70",55,"Thymus vulgaris","","Thymus",2,"Thymus vulgaris"," L.","Thymus",2,325900,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Thymus vulgaris",NA
+"71",56,"Triticum aestivum","","Triticum",2,"Triticum aestivum"," L.","Triticum",2,112666,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Triticum aestivum",NA
+"72",57,"Vanilla planifolia","","Vanilla",2,"Vanilla planifolia","Jacks.","Vanilla",2,38666,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Vanilla planifolia",NA
+"73",58,"Vicia lens","","Vicia",2,"Vicia lens","(L.) Coss. &  Germ. (L.) Coss. &  Germ.","Vicia",2,186640,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia lens",NA
+"75",59,"Vitis vinifera","","Vitis",2,"Vitis vinifera","L.","Vitis",2,134710,1,FALSE,0.8,0,NA,NA,NA,NA,"Vitaceae",NA,"Vitis vinifera",NA
+"76",60,"Zea mays","","Zea",2,"Zea mays"," L.","Zea",2,115675,1,FALSE,0.8,0,NA,NA,NA,NA,"Poaceae",NA,"Zea mays",NA
